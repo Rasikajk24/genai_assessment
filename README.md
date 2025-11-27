@@ -11,6 +11,7 @@ Prompts the user for clarification using state["clarify_question"].
 Returns {"clarification": "..."}.
 Raises if empty input. Uses logger.
 llm_summarize_tool(state):
+Note: LLM used is groq in this project
 Sends state["results"] to an LLM and returns {"final_summary": summary}.
 Runs the pipeline: read -> route -> optional clarify -> summarize -> save -> print final state.
  
